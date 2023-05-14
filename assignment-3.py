@@ -55,6 +55,13 @@ ax.set_title('Age vs. Blood Pressure')
 plt.savefig('scatter.png')
 plt.close()
 
+model training 
+from stats import LinearRegression
+reg=LinearRegression(data[['Age']], bp)
+LinearRegression
+
+reg.predict(25)
+
 # Create a PDF report
 doc = SimpleDocTemplate('report-5.pdf', pagesize=letter)
 elements = []
